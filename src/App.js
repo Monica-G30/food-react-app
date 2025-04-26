@@ -33,8 +33,8 @@ function App() {
       <h2>Our Food Recipes</h2>
       <SearchBar
         isLoading={isLoading}
-        query={query}
-        setQuery={setQuery}
+        value={query}
+        onChange={(event) => setQuery(event.target.value)}
         handleSubmit={handleSubmit}
       />
       <div className="recipes">
